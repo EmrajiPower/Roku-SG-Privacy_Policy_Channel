@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+
+<!--********** Copyright 2015 Roku Corp.  All Rights Reserved. **********-->
+
+<component name="categoriesListPanel" extends="ListPanel" >
+<script type="text/brightscript" uri="pkg:/components/categoriesListPanel.brs" />
+<children>
+  <LabelList id = "categorieslist" >
+    <ContentNode role = "content" >
+      <ContentNode 
+        title = "Privacy Options" 
+        description = "About the data privacy options, it applies for the following states
+        &#xA;
+        &#xA;  &#8226; CA
+        &#xA;  &#8226; CO 
+        &#xA;  &#8226; CT
+        &#xA;  &#8226; VA" 
+        shortdescriptionline1="Renderable Node Markup" 
+        Url="privacy_options" />
+      <ContentNode 
+        title = "Consent information" 
+        description = "Under our brand
+        &#xA;
+        &#xA;In the United States of America State we use the state codes
+        &#xA;and depending on yor location you should be opted into consent automatically 
+        &#xA;by default, so you will be notified if you cannot change
+        &#xA;the consent based on the regulations of every state" 
+        shortdescriptionline1="Consent information Markup" 
+        Url="consent_information" />
+    </ContentNode>
+  </LabelList>
+</children>
+
+</component>

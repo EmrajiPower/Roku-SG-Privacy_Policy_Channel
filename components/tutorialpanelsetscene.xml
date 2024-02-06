@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+
+<!--********** Copyright 2015 Roku Corp.  All Rights Reserved. **********-->
+
+<component name="tutorialPanelSetScene" extends="OverhangPanelSetScene" >
+  <script type="text/brightscript" uri="pkg:/components/tutorialPanelSetScene.brs" />
+  <script type="text/brightscript" uri="pkg:/source/utils.brs" />
+  <children>
+    <Label id="deviceLocationInfo" font="font:SmallestSystemFont"  translation="[1000,690]" />
+  </children>
+</component>

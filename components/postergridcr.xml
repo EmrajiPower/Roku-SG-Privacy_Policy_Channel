@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+
+<!--********** Copyright 2015 Roku Corp.  All Rights Reserved. **********-->
+
+<component name = "postergridCR" extends = "Task" >
+<script type="text/brightscript" uri="pkg:/components/postergridcr.brs" />
+<interface>
+	<field id = "postergriduri" type = "string" />
+	<field id = "postergridcontent" type = "node" />
+</interface> 
+</component>

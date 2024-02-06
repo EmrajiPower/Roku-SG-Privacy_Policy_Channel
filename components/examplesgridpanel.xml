@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+
+<!--********** Copyright 2015 Roku Corp.  All Rights Reserved. **********-->
+
+<component name="examplesGridPanel" extends="GridPanel" >
+<interface>
+  <field id = "overhangtext" type = "string" />
+  <field id = "gridcontenturi" type = "string" onChange = "readpostergrid" />
+</interface>
+<script type="text/brightscript" uri="pkg:/components/examplesGridPanel.brs" />
+<script type="text/brightscript" uri="pkg:/source/utils.brs" />
+<children>
+    <ButtonGroup id="privacyBtns" translation="[400,170]" itemSpacings="[20]" layoutDirection="vert" vertAlignment="center" horizAlignment="center" iconUri="" focusedIconUri="">
+          <Button
+                id="userFormButtonsA"                 
+                height="55">
+                    <Poster
+                      id="firstPolicyAction"
+                      visible="true"
+                      width="245"  
+                      translation="[-4,-3]"
+                      height="60"  
+                    />
+                    <Rectangle
+                        id="BGuserFormButtonsA"                                                
+                        width="240"  
+                        height="55"  
+                    />
+                    <Label text="Allow data collection for personalized recommendations" width="800" height="55" horizAlign="center" vertAlign="center" translation="[-800,0]"/>
+                    <Label id="firstPolicyActionText" width="240" height="55" horizAlign="center" vertAlign="center"/>
+                </Button>
+                <Button
+                id="userFormButtonsB"                    
+                height="55">
+                    <Poster
+                      id="secondPolicyAction"
+                      visible="true"
+                      width="245"  
+                      translation="[-4,-3]"
+                      height="60"  
+                    />
+                    <Rectangle
+                        id="BGuserFormButtonsB"                                                
+                        width="240"  
+                        height="55"  
+                    />
+                    <Label text="Allow data sharing with third parties" width="800" height="55" horizAlign="center" vertAlign="center" translation="[-800,0]"/>
+                    <Label id="secondPolicyActionText" width="240" height="55" horizAlign="center" vertAlign="center"/>
+                </Button>
+        </ButtonGroup>      
+        <Label id="automaticAgreementText" text="According to the laws of your state you will be opted into consent information, by default you are agree with our privacy policy" font="font:SmallestSystemFont" width="600" height="55" horizAlign="center" vertAlign="center" wrap="true" translation="[180,400]"/>  
+</children>
+</component>
